@@ -11,6 +11,6 @@ class Comment < ActiveRecord::Base
   end
 
   def email_article_author
-    puts "We will notify the #{{article.user.email} in Chapter 9"
+    puts "We will notify the #{article.user.email} in Chapter 9"
   end
 end
