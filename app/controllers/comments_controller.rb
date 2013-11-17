@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :authenicate, :only :destroy
   before_action :load_article
 
   def create
